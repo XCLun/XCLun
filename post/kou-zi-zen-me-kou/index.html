@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>扣字怎么扣 | PengLai</title>
+<link rel="shortcut icon" href="https://github.com/XCLun/XCLun.git/favicon.ico?v=1719058807951">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://github.com/XCLun/XCLun.git/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="扣字怎么扣 | PengLai - Atom Feed" href="https://github.com/XCLun/XCLun.git/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="虚假的教程：
+建议你去看视频学习那些露手的大手子按字
+学习搜狗就行了abc没必要玩
+好好的按慢慢的按一开始都是这样
+怎么按的舒服怎么按而不是怎么按的快怎么按
+按字别上身到脾气
+真正的教程：
+学会首拼你就是新一代喷神
+找徐宇航买不会暴露的软件..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://github.com/XCLun/XCLun.git">
+  <img class="avatar" src="https://github.com/XCLun/XCLun.git/images/avatar.png?v=1719058807951" alt="">
+  </a>
+  <h1 class="site-title">
+    PengLai
+  </h1>
+  <p class="site-description">
+    惊天地泣鬼神，蓬莱都是人上人
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              扣字怎么扣
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-06-22
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>虚假的教程：<br>
+建议你去看视频学习那些露手的大手子按字</p>
+<p>学习搜狗就行了abc没必要玩</p>
+<p>好好的按慢慢的按一开始都是这样</p>
+<p>怎么按的舒服怎么按而不是怎么按的快怎么按</p>
+<p>按字别上身到脾气</p>
+<p>真正的教程：<br>
+学会首拼你就是新一代喷神</p>
+<p>找徐宇航买不会暴露的软件</p>
+<p>语音输入</p>
+<p>拜师别人被圈一笔钱然后辱骂恩师就渐渐学会扣字了</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://github.com/XCLun/XCLun.git/post/pen-xi-zen-me-wan/">
+              <h3 class="post-title">
+                喷系怎么玩
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="penglai.xinzuoyun.eu.org" target="_blank">PengLai</a>
+  <a class="rss" href="https://github.com/XCLun/XCLun.git/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

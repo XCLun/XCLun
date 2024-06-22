@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>能不能有点仙气 | PengLai</title>
+<link rel="shortcut icon" href="https://github.com/XCLun/XCLun.git/favicon.ico?v=1719058807951">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://github.com/XCLun/XCLun.git/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="能不能有点仙气 | PengLai - Atom Feed" href="https://github.com/XCLun/XCLun.git/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="喷系尽头谁争锋，一键无始道成空。
+昔人已离喷系去，此地空余按字楼。键盘一去不复返，只余电脑空悠悠。
+天不生我喷系人，剑道万古如长夜。
+扣字天地之间，若白驹过隙，忽然而已。
+早知喷系绊人心，何如当初莫相识。
+无人扶我当皇帝，我自键盘跨山巅。
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://github.com/XCLun/XCLun.git">
+  <img class="avatar" src="https://github.com/XCLun/XCLun.git/images/avatar.png?v=1719058807951" alt="">
+  </a>
+  <h1 class="site-title">
+    PengLai
+  </h1>
+  <p class="site-description">
+    惊天地泣鬼神，蓬莱都是人上人
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              能不能有点仙气
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-06-22
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>喷系尽头谁争锋，一键无始道成空。</p>
+<p>昔人已离喷系去，此地空余按字楼。键盘一去不复返，只余电脑空悠悠。</p>
+<p>天不生我喷系人，剑道万古如长夜。</p>
+<p>扣字天地之间，若白驹过隙，忽然而已。</p>
+<p>早知喷系绊人心，何如当初莫相识。</p>
+<p>无人扶我当皇帝，我自键盘跨山巅。</p>
+<p>键道喷系花似锦，偏我来时不逢春。</p>
+<p>键道古，扣字祥，又携键盘路茫茫。</p>
+<p>天生我才必有用，键盘扣烂还复来。</p>
+<p>键盘声音萧萧下，不尽奔雷滚滚来。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://github.com/XCLun/XCLun.git/post/kou-zi-zen-me-kou/">
+              <h3 class="post-title">
+                扣字怎么扣
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="penglai.xinzuoyun.eu.org" target="_blank">PengLai</a>
+  <a class="rss" href="https://github.com/XCLun/XCLun.git/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
